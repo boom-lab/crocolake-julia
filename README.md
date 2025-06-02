@@ -1,7 +1,7 @@
 
 ## CrocoLake-Julia
 
-CrocoLake-Julia is a collection of Jupyter notebooks that shows how to interface with [CrocoLake](https://crocolakedocs.readthedocs.io/en/latest/) and Argo's parquet databases with Ju;oa.
+CrocoLake-Julia is a collection of Jupyter notebooks that shows how to interface with [CrocoLake](https://crocolakedocs.readthedocs.io/en/latest/) and Argo's parquet databases with Julia.
 
 ### Table of Contents
 1. [Usage](#usage)
@@ -31,9 +31,9 @@ julia --project=. -e 'using Pkg; Pkg.instantiate()'
 
 The following databases are currently available:
 
-* CrocoLake: contains the best available data from Argo, GLODAP, and Spray Gliders. [More details here](https://crocolakedocs.readthedocs.io/en/latest/crocolake.html). [This example uses CrocoLake](notebooks/Example_2_CrocoLakePHY_Map_Temperature.ipynb).
-* Argo 'QC': contains the best available data, that is real time values are reported only when delayed values are not available. This version is the same used in CrocoLake, and [here](https://crocolakedocs.readthedocs.io/en/latest/available_datasets.html#argo) you can find more details on how it is generated. [This example uses Argo 'QC'](notebooks/Example_3_ArgoPHY_QC_Temperature-Salinity_Profiles.ipynb).
-* Argo 'ALL': contains all real time and adjusted variables as reported in the core ('<PLATFORM_NUMBER>_prof.nc') and synthetic ('<PLATFORM_NUMBER>_Sprof.nc') profile files, for the physical and biogeochemical versions respectively. [Both this](notebooks/Example_1_ArgoBGC_Map_Oxygen.ipynb) and [this examples](notebooks/Example_4_Animation_Oxygen.ipynb) use Argo 'ALL'.
+* CrocoLake: contains the best available data from Argo, GLODAP, and Spray Gliders. [More details here](https://crocolakedocs.readthedocs.io/en/latest/crocolake.html).
+* Argo 'QC': contains the best available data, that is real time values are reported only when delayed values are not available. This version is the same used in CrocoLake, and [here](https://crocolakedocs.readthedocs.io/en/latest/available_datasets.html#argo) you can find more details on how it is generated.
+* Argo 'ALL': contains all real time and adjusted variables as reported in the core ('<PLATFORM_NUMBER>_prof.nc') and synthetic ('<PLATFORM_NUMBER>_Sprof.nc') profile files, for the physical and biogeochemical versions respectively.
 
 Each database comes in 'PHY' and 'BGC' versions.
 
